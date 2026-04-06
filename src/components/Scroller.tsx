@@ -9,7 +9,7 @@ export default function ScrollDisplay() {
       to take a look around...
     </Fragment>,
     <Fragment>
-      Web app using: Reactjs, FontAwesome, AOS, SVG Backgrounds, Axios & Use
+      Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
       Sound...
     </Fragment>,
     <Fragment>Another example message...</Fragment>,

@@ -5,7 +5,7 @@ import selectionSound from "../assets/sounds/game-selection-sound.wav";
 import { useLocation, useNavigate } from "react-router";
 
 export default function MainMenu() {
-  const [floorNumber, setFloorNumber] = useState(4);
+  const [floorNumber, setFloorNumber] = useState(1);
   const [playSwitchSound] = useSound(selectionSound, { volume: 1 });
   const navigate = useNavigate();
   const location = useLocation();

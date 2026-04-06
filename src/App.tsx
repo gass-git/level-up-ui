@@ -10,7 +10,7 @@ import BasicInfo from "./components/BasicInfo";
 function App() {
   return (
     <BrowserRouter>
-      <main className="main-wrapper" data-aos="zoom-in" data-aos-duration="500">
+      <main className="main-wrapper">
         <section className="first-row">
           <Scroller />
         </section>

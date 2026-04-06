@@ -1,37 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import "../styles/footerContent.css";
-import { space1, space2, space3 } from "../utils/spaces.tsx";
+import space from "../utils/spaces.tsx";
 
 export default function FooterContent() {
   return (
     <div className="credits">
-      {space2}
       <a
         style={{ marginLeft: "0px" }}
-        href="https://github.com/gass-git/dev-plus"
+        href="https://github.com/gass-git/level-up-ui"
         target="_blank"
         rel="noreferrer"
       >
         <img
-          src="https://img.shields.io/github/repo-size/gass-git/dev-plus?style=plastic&color=orange"
+          src="https://img.shields.io/github/repo-size/gass-git/level-up-ui?style=plastic&color=orange"
           alt="size"
         />
       </a>
-      {space3}
-      <a
-        href="https://github.com/gass-git/dev-plus/blob/master/LICENSE"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          src="https://img.shields.io/github/license/gass-git/dev-plus?style=plastic"
-          alt="License name"
-        />
-      </a>
-      {space2}
+      {space(3)}
       <div className="txt">
-        -{space2}
+        -{space(2)}
         inspired by
       </div>
       <FontAwesomeIcon
@@ -47,9 +35,9 @@ export default function FooterContent() {
         RPG maker
       </a>
       <div className="txt">
-        {space1}
+        {space(1)}
         designs
-        {space1}
+        {space(1)}
       </div>
     </div>
   );
