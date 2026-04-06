@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+* {
+  -webkit-tap-highlight-color: transparent; /* Removes ugly highlight onclick (touch screens) */
+}
+:root {
+  --yellow1: rgb(245, 214, 112);
+  --yellow2: rgb(236, 184, 41);
+  --yellow3: rgb(248, 217, 131);
+  --green1: rgb(54, 182, 31);
+  --green2: rgb(128, 228, 109);
+  --light-blue: rgb(136, 224, 239);
+  --light-red: rgb(254, 143, 143);
+  --light-gray: rgb(213, 213, 213);
+  --gray: rgb(177, 177, 177);
+}
+body {
+  background: #04142d;
+  background-image: url("../assets/images/bg.jpg");
+  /* Image from: https://wallspic.com/image/91628-winter-games-art-metropolis-clothing */
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: "play", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  width: 92%;
+  text-align: justify;
+  line-height: 30px;
+  height: 165px;
+  letter-spacing: 1px;
+  font-family: "play", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin: 25px auto 5px auto;
+  text-shadow:
+    -1px 0 rgb(0, 0, 0, 0.3),
+    0 1px rgb(0, 0, 0, 0.3),
+    1px 0 rgb(0, 0, 0, 0.3),
+    0 -1px rgb(0, 0, 0, 0.3);
+}
+
+.arrow-box {
+  width: 92%;
+  text-align: center;
+  margin: 20px auto 5px auto;
+}
+
+.arrow-box .icon {
+  cursor: pointer;
+  font-size: 35px;
+  color: rgb(255, 255, 255, 0.9);
+  text-shadow:
+    -1px 0 rgb(0, 0, 0, 0.3),
+    0 1px rgb(0, 0, 0, 0.3),
+    1px 0 rgb(0, 0, 0, 0.3),
+    0 -1px rgb(0, 0, 0, 0.3);
+  animation: arrow-flicker 1300ms infinite;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.shadow-08 {
+  filter: drop-shadow(0px 0px 1px rgb(0, 0, 0, 0.8));
+}
+.shadow-04 {
+  filter: drop-shadow(0px 0px 1px rgb(0, 0, 0, 0.4));
+}
+.opacity-0 {
+  opacity: 0;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrow-flicker {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrow-flicker-2 {
+  0% {
+    opacity: 0.5;
+  }
+  49% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes main-menu-waver {
+  0% {
+    background: rgb(255, 255, 255, 0.3);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.55);
+  }
+  100% {
+    background: rgb(255, 255, 255, 0.3);
+  }
+}
+
+.main-wrapper {
+  position: absolute;
+  z-index: 2;
+  top: 9%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  width: 800px;
+  /*border: 3px solid yellow;*/
+}
+.first-row {
+  display: block;
+  position: relative;
+  /*border: 1px solid white;*/
+}
+.second-row {
+  display: flex;
+  position: relative;
+  margin-top: 3px;
+}
+.second-row .left-side {
+  display: block;
+}
+.second-row .right-side {
+  padding-left: 3px;
+}
+.third-row {
+  position: relative;
+  display: flex;
+  /*border: 1px solid white;*/
+}
+.third-row .border-img {
+  margin: 3px auto;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 19px;
+  border-image: url("../assets/images/border-60px.png") 19 round;
+  width: 770px;
+  height: 240px;
+  z-index: 2;
+  /*box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;*/
+}
+.third-row .inner-container {
+  height: 268px;
+  margin: -14px -14px 0 -14px;
+  border-radius: 2px;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(38, 51, 107, 0.75),
+    rgb(38, 51, 107, 0.75) 1px,
+    rgba(35, 41, 63, 0.85) 2px,
+    rgba(32, 39, 66, 0.85) 3px
+  );
+  overflow: hidden;
+  /*border: 1px solid rgba(14, 16, 98, 0.4);*/
+}
+.fourth-row {
+  position: relative;
+}
