@@ -1,4 +1,4 @@
-import FooterContent from "./components/FooterContent";
+import Footer from "./components/Footer";
 import Scroller from "./components/Scroller";
 import "./styles/App.css";
 import MainMenu from "./components/MainMenu";
@@ -35,7 +35,7 @@ function App() {
       </main>
 
       <footer>
-        <FooterContent />
+        <Footer />
       </footer>
     </BrowserRouter>
   );

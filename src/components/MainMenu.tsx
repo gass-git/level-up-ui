@@ -16,7 +16,7 @@ export default function MainMenu() {
   }, [location]);
 
   function goto(n: number) {
-    navigate(`/option-${n}`, { state: n });
+    navigate(`/section-${n}`, { state: n });
   }
 
   return (
@@ -25,16 +25,19 @@ export default function MainMenu() {
         <div className="inner-container">
           <div className="menu-wrapper">
             <div className="option" onClick={() => goto(1)}>
-              <div className="label">Option 1</div>
+              <div className="label">section 1</div>
             </div>
             <div className="option" onClick={() => goto(2)}>
-              <div className="label">Option 2</div>
+              <div className="label">section 2</div>
             </div>
             <div className="option" onClick={() => goto(3)}>
-              <div className="label">Option 3</div>
+              <div className="label">section 3</div>
             </div>
             <div className="option" onClick={() => goto(4)}>
-              <div className="label">Option 4</div>
+              <div className="label">section 4</div>
+            </div>
+            <div className="option" onClick={() => goto(5)}>
+              <div className="label">section 5</div>
             </div>
 
             {/* -- Elevator -- */}

@@ -1,8 +1,5 @@
 import { Routes, Route, Navigate } from "react-router";
-import OptionOne from "./OptionOne";
-import OptionTwo from "./OptionTwo";
-import OptionThree from "./OptionThree";
-import OptionFour from "./OptionFour";
+import Section from "./Section";
 
 export default function Content() {
   return (
@@ -11,11 +8,12 @@ export default function Content() {
         <div className="inner-container">
           <Routes>
             <Route path="*" element={<Navigate to="/" />} />
-            <Route path="/" element={<OptionOne />} />
-            <Route path="option-1" element={<OptionOne />} />
-            <Route path="option-2" element={<OptionTwo />} />
-            <Route path="option-3" element={<OptionThree />} />
-            <Route path="option-4" element={<OptionFour />} />
+            <Route path="/" element={<Section sectionNumber="1" />} />
+            <Route path="section-1" element={<Section sectionNumber="1" />} />
+            <Route path="section-2" element={<Section sectionNumber="2" />} />
+            <Route path="section-3" element={<Section sectionNumber="3" />} />
+            <Route path="section-4" element={<Section sectionNumber="4" />} />
+            <Route path="section-5" element={<Section sectionNumber="5" />} />
           </Routes>
         </div>
       </div>

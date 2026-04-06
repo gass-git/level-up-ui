@@ -44,6 +44,25 @@ body {
     0 -1px rgb(0, 0, 0, 0.3);
 }
 
+a {
+  text-decoration: none !important;
+  color: var(--yellow2);
+  text-shadow:
+    -1px 0 rgb(0, 0, 0, 0.3),
+    0 1px rgb(0, 0, 0, 0.3),
+    1px 0 rgb(0, 0, 0, 0.3),
+    0 -1px rgb(0, 0, 0, 0.3);
+}
+
+a:hover {
+  color: var(--yellow1);
+}
+
+.highlight {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
 .arrow-box {
   width: 92%;
   text-align: center;
@@ -141,11 +160,14 @@ code {
   /*border: 1px solid white;*/
 }
 .second-row {
+  height: 210px;
   display: flex;
   position: relative;
   margin-top: 3px;
 }
 .second-row .left-side {
+  width: 100%;
+  height: 100%;
   display: block;
 }
 .second-row .right-side {
@@ -162,7 +184,7 @@ code {
   border-style: solid;
   border-width: 19px;
   border-image: url("../assets/images/border-60px.png") 19 round;
-  width: 770px;
+  width: 820px;
   height: 240px;
   z-index: 2;
   /*box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;*/
@@ -183,4 +205,44 @@ code {
 }
 .fourth-row {
   position: relative;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  width: 100%;
+  font-weight: 300;
+  height: 34px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  font-family: "poppins", sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /*font-family: "play", sans-serif;*/
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  /*border-bottom: 1px solid rgb(255, 255, 255, 0.1);*/
+}
+footer .credits {
+  display: flex;
+  height: 20px;
+  margin: 9px auto;
+  /*text-shadow: -1px 0 rgb(0, 0, 0, 0.9), 0 1px rgb(0, 0, 0, 0.9),
+    1px 0 rgb(0, 0, 0, 0.9), 0 -1px rgb(0, 0, 0, 0.9);
+  /*border: 1px solid white;*/
+}
+footer .credits .txt {
+  margin-top: 1px;
+  display: inline-block;
+  /*border: 1px solid white;*/
+}
+footer a {
+  text-decoration: none !important;
+  color: white;
+}
+footer .credit-link {
+  margin-top: 1px;
+  color: rgb(255, 248, 157, 0.9);
+  /*border: 1px solid white;*/
 }
