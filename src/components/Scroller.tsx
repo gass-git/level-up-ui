@@ -1,5 +1,4 @@
 import { Fragment, useEffect, useState } from "react";
-import "../styles/Scroller.css";
 
 export default function ScrollDisplay() {
   const [index, setIndex] = useState(0);
