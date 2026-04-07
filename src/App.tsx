@@ -5,7 +5,7 @@ import MainMenu from "./components/MainMenu";
 import Links from "./components/Links";
 import { BrowserRouter } from "react-router";
 import MainContent from "./components/MainContent";
-import BasicInfo from "./components/BasicInfo";
+import BasicInfo from "./components/Profile";
 
 function App() {
   return (

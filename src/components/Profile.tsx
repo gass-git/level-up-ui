@@ -1,5 +1,5 @@
 import "../styles/BasicInfo.css";
-import avatar from "../assets/images/avatar_2.png";
+import avatar from "../assets/images/paladin.png";
 
 export default function BasicInfo() {
   return (
