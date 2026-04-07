@@ -24,9 +24,9 @@ export default function MainMenu() {
     <div className="main-menu">
       <div
         className="rpg-border"
-        style={{ height: `175px`, width: config.menuWidth }}
+        style={{ height: `171px` }}
       >
-        <div className="inner-container">
+        <div className="flex-container" style={{height:`200px`}}>
           <div className="menu-wrapper">
             <div className="option" onClick={() => goto(1)}>
               <div className="label">section 1</div>

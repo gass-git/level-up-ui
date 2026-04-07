@@ -8,7 +8,7 @@ export default function Content() {
       className="rpg-border"
       style={{ height: `243px`, width: config.width }}
     >
-      <div className="flex-container" style={{ height: `268px` }}>
+      <div className="flex-container" style={{ height: `271px` }}>
         <Routes>
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/" element={<Section sectionNumber="1" />} />

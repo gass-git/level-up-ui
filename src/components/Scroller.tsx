@@ -32,14 +32,12 @@ export default function ScrollDisplay() {
   }, []);
 
   return (
-    <section key="SD-identifier" className="scroll-display">
-      <div className="rpg-border">
-        <div className="flex-container">
+      <div className="rpg-border" style={{height: `30px`}}>
+        <div className="flex-container" style={{height: `58px`}}>
           <div className="msg-display">
             <div className="scroll-text">{messages[index]}</div>
           </div>
         </div>
       </div>
-    </section>
   );
 }

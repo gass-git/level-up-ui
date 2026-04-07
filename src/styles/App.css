@@ -261,6 +261,7 @@ footer .credit-link {
 }
 .flex-container {
   display: flex;
+  border-radius: 3px;
   margin: -14px -14px 0 -14px;
   background: repeating-linear-gradient(
     0deg,

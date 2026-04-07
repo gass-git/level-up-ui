@@ -1,7 +1,6 @@
 const config = {
   width: 850,
-  menuWidth: 156,
-  profileWidth: 620,
+  profileWidth: 610,
 };
 
 export { config };

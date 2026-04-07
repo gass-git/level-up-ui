@@ -1,16 +1,4 @@
-.scroll-display .border-img .inner-container {
-  height: 56px;
-  margin: -14px -14px 0 -14px;
-  border-radius: 2px;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(38, 51, 107, 0.75),
-    rgb(38, 51, 107, 0.75) 1px,
-    rgba(35, 41, 63, 0.85) 2px,
-    rgba(32, 39, 66, 0.85) 3px
-  );
-  border: 1px solid rgba(14, 16, 98, 0.4);
-}
+
 
 .msg-display {
   width: 98%;
