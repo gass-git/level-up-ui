@@ -23,7 +23,7 @@
  */
 body {
   background: #04142d;
-  background-image: url("../assets/images/cave-bg.jpg");
+  /*background-image: url("../assets/images/cave-bg.jpg");*/
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
@@ -156,19 +156,17 @@ code {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
-  width: 800px;
-  /*border: 3px solid yellow;*/
+}
+.main-wrapper > * {
+  margin: 0 0 2px 0;
 }
 .first-row {
   display: block;
   position: relative;
-  /*border: 1px solid white;*/
 }
 .second-row {
-  height: 210px;
   display: flex;
   position: relative;
-  margin-top: 3px;
 }
 .second-row .left-side {
   width: 100%;
@@ -194,20 +192,7 @@ code {
   z-index: 2;
   /*box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;*/
 }
-.third-row .inner-container {
-  height: 268px;
-  margin: -14px -14px 0 -14px;
-  border-radius: 2px;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(38, 51, 107, 0.75),
-    rgb(38, 51, 107, 0.75) 1px,
-    rgba(35, 41, 63, 0.85) 2px,
-    rgba(32, 39, 66, 0.85) 3px
-  );
-  overflow: hidden;
-  /*border: 1px solid rgba(14, 16, 98, 0.4);*/
-}
+
 .fourth-row {
   position: relative;
 }
@@ -266,4 +251,77 @@ footer .credit-link {
   to {
     transform: translateY(90vh);
   }
+}
+.rpg-border {
+  margin: 0 auto;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 19px;
+  border-image: url("../assets/images/border-60px.png") 19 round;
+}
+.flex-container {
+  display: flex;
+  margin: -14px -14px 0 -14px;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(38, 51, 107, 0.75),
+    rgb(38, 51, 107, 0.75) 1px,
+    rgba(35, 41, 63, 0.85) 2px,
+    rgba(32, 39, 66, 0.85) 3px
+  );
+}
+.avatar {
+  padding: 0 0 0 15px;
+  opacity: 0.9;
+  transform: scale(0.85);
+}
+.username {
+  font-family: "press start 2p", sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255, 1);
+  text-shadow:
+    -1px 0 rgb(0, 0, 0, 0.3),
+    0 1px rgb(0, 0, 0, 0.3),
+    1px 0 rgb(0, 0, 0, 0.3),
+    0 -1px rgb(0, 0, 0, 0.3);
+}
+.sub-username {
+  margin: 5px 0 0 0;
+  font-family: "play", sans-serif;
+  font-size: 17px;
+  color: white;
+  text-shadow:
+    -1px 0 rgb(0, 0, 0, 0.3),
+    0 1px rgb(0, 0, 0, 0.3),
+    1px 0 rgb(0, 0, 0, 0.3),
+    0 -1px rgb(0, 0, 0, 0.3);
+}
+.profile-attributes {
+  padding: 20px 20px 0 10px;
+  width: 100%;
+  color: white;
+}
+.profile-attributes > div {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  font-family: "play", sans-serif;
+  font-size: 17px;
+  color: white;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  text-shadow:
+    -1px 0 rgb(0, 0, 0, 0.3),
+    0 1px rgb(0, 0, 0, 0.3),
+    1px 0 rgb(0, 0, 0, 0.3),
+    0 -1px rgb(0, 0, 0, 0.3);
+}
+.profile-attributes label {
+  text-align: left;
+  margin: 1px 0 0 7px;
+  width: 50%;
+}
+.profile-attributes data {
+  text-align: right;
+  margin: 1px 5px 0 0;
+  width: 50%;
 }

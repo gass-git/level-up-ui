@@ -6,11 +6,12 @@ import Links from "./components/Links";
 import { BrowserRouter } from "react-router";
 import MainContent from "./components/MainContent";
 import BasicInfo from "./components/Profile";
+import { config } from "./config";
 
 function App() {
   return (
     <BrowserRouter>
-      <main className="main-wrapper">
+      <main className="main-wrapper" style={{ width: config.width }}>
         <section className="first-row">
           <Scroller />
         </section>

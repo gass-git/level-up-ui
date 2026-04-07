@@ -28,7 +28,7 @@ export default function Links() {
 
   return (
     <main className="links">
-      <div className="border-img">
+      <div className="rpg-border" style={{ height: `30px` }}>
         <div className="inner-container">
           <div className="icons-wrapper">
             <a

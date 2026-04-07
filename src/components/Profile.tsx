@@ -1,42 +1,39 @@
-import "../styles/BasicInfo.css";
-import avatar from "../assets/images/paladin.png";
+import avatar from "../assets/images/avatar-img.png";
+import { config } from "../config";
 
-export default function BasicInfo() {
+export default function Profile() {
   return (
-    <section key="basic-info-identifier" className="basic-info">
-      <div className="border-img">
-        <div className="inner-container">
-          <div className="avatar-wrapper">
-            <img src={avatar} alt="" title="Pixel art made by Eric Barone" />
-          </div>
+    <div
+      className="rpg-border"
+      style={{ height: `175px`, width: config.profileWidth }}
+    >
+      <div className="flex-container" style={{ height: `200px` }}>
+        <img src={avatar} className="avatar" alt="" />
 
-          {/* -- Avatar & username -- */}
-          <div className="username-wrapper">
-            <div className="username">username</div>
-            <div className="sub-username">subtitle</div>
-          </div>
+        <div style={{ padding: `20px 0 0 20px`, minWidth: `140px` }}>
+          <div className="username">username</div>
+          <div className="sub-username">subtitle</div>
+        </div>
 
-          {/* -- Profile summary -- */}
-          <div className="info">
-            <div>
-              <label>field 1</label>
-              <data>value</data>
-            </div>
-            <div>
-              <label>field 2</label>
-              <data>value</data>
-            </div>
-            <div>
-              <label>field 3</label>
-              <data>value</data>
-            </div>
-            <div>
-              <label>field 4</label>
-              <data>value</data>
-            </div>
+        <div className="profile-attributes">
+          <div>
+            <label>field 1</label>
+            <data>value</data>
+          </div>
+          <div>
+            <label>field 2</label>
+            <data>value</data>
+          </div>
+          <div>
+            <label>field 3</label>
+            <data>value</data>
+          </div>
+          <div>
+            <label>field 4</label>
+            <data>value</data>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

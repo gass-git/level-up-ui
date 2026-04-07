@@ -1,13 +1,3 @@
-.scroll-display .border-img {
-  margin: 0 auto;
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 19px;
-  border-image: url("../assets/images/border-60px.png") 19 round;
-  width: 820px;
-  height: 30px;
-}
-
 .scroll-display .border-img .inner-container {
   height: 56px;
   margin: -14px -14px 0 -14px;

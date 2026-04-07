@@ -33,8 +33,8 @@ export default function ScrollDisplay() {
 
   return (
     <section key="SD-identifier" className="scroll-display">
-      <div className="border-img">
-        <div className="inner-container">
+      <div className="rpg-border">
+        <div className="flex-container">
           <div className="msg-display">
             <div className="scroll-text">{messages[index]}</div>
           </div>
