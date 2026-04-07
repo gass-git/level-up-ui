@@ -1,45 +1,40 @@
-import Footer from "./components/Footer";
-import Scroller from "./components/Scroller";
-import "./styles/App.css";
-import MainMenu from "./components/MainMenu";
-import Links from "./components/Links";
+import * as C from "./components";
 import { BrowserRouter } from "react-router";
-import MainContent from "./components/MainContent";
-import BasicInfo from "./components/Profile";
 import { config } from "./config";
+import "./styles/App.css";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <main className="main-wrapper" style={{ width: config.width }}>
-        <section className="first-row">
-          <Scroller />
-        </section>
+      <section className="col-flexbox">
+        <main style={{ width: config.width, margin:`50px auto 0 auto` }}>
+          <section className="first-row">
+            <C.Scroller />
+          </section>
 
-        <section className="second-row">
-          <div className="left-side">
-            <MainMenu />
-          </div>
+          <section className="second-row">
+            <div className="left-side">
+              <C.MainMenu />
+            </div>
 
-          <div className="right-side">
-            <BasicInfo />
-          </div>
-        </section>
+            <div className="right-side">
+              <C.BasicInfo />
+            </div>
+          </section>
 
-        <section className="third-row">
-          <MainContent />
-        </section>
+          <section className="third-row">
+            <C.MainContent />
+          </section>
 
-        <section className="fourth-row">
-          <Links />
-        </section>
-      </main>
+          <section className="fourth-row">
+            <C.Links />
+          </section>
+        </main>
 
-      <footer>
-        <Footer />
-      </footer>
+        <footer>
+          <C.Footer />
+        </footer>
+      </section>
     </BrowserRouter>
   );
 }
-
-export default App;

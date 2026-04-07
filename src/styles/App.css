@@ -147,19 +147,13 @@ code {
   }
 }
 
-.main-wrapper {
-  position: absolute;
-  z-index: 2;
-  top: 9%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
+.col-flexbox{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
-.main-wrapper > * {
-  margin: 0 0 2px 0;
-}
+
 .first-row {
   display: block;
   position: relative;
@@ -198,21 +192,17 @@ code {
 }
 
 footer {
-  position: fixed;
   display: flex;
-  bottom: 0px;
+  margin-top:5rem;
   width: 100%;
   font-weight: 300;
   height: 34px;
   font-size: 11px;
   letter-spacing: 0.5px;
   font-family: "poppins", sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /*font-family: "play", sans-serif;*/
   color: rgba(255, 255, 255, 0.9);
   background: rgba(0, 0, 0, 0.4);
   border-top: 1px solid rgb(255, 255, 255, 0.1);
-  /*border-bottom: 1px solid rgb(255, 255, 255, 0.1);*/
 }
 footer .credits {
   display: flex;
