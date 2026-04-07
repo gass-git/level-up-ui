@@ -1,30 +1,15 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { config } from "../config";
+import { scrollerMessages } from "../data";
 
-export default function ScrollDisplay() {
+export default function Scroller() {
   const [index, setIndex] = useState(0);
-  const messages = [
-    <Fragment>
-      Welcome fellow visitor from Planet Earth ! I'm glad you came by, feel free
-      to take a look around...
-    </Fragment>,
-    <Fragment>
-      Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
-      Sound...
-    </Fragment>,
-    <Fragment>Another example message...</Fragment>,
-  ];
 
   useEffect(() => {
     // creat interval on mount
     const intervalId = setInterval(() => {
-      const maxIndex = messages.length;
-
-      if (index >= maxIndex) {
-        setIndex(0);
-      } else {
-        setIndex(index + 1);
-      }
-    }, 10000);
+      setIndex(prev => (prev >= scrollerMessages.length - 1 ? 0 : prev + 1))
+    }, config.scrollInterval);
 
     // cleanup on unmount
     return () => clearInterval(intervalId);
@@ -34,7 +19,15 @@ export default function ScrollDisplay() {
       <div className="rpg-border" style={{height: `30px`}}>
         <div className="flex-container" style={{height: `58px`}}>
           <div className="msg-display">
-            <div className="scroll-text">{messages[index]}</div>
+            
+            {/** 
+             * React will remount the div element everytime the index value changes,
+             * therefore the CSS class will be toggled. Re-adding the class triggers
+             * the animation again.
+             */}
+            <div key={index} className="scroll-text" style={{animationDuration: `${String(config.scrollInterval)}ms`}}>
+              {scrollerMessages[index]}
+            </div>
           </div>
         </div>
       </div>

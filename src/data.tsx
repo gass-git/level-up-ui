@@ -65,4 +65,16 @@ const data = {
   ],
 };
 
-export { data };
+const scrollerMessages = [
+    <Fragment>
+      Welcome fellow visitor from Planet Earth ! I'm glad you came by, feel free
+      to take a look around...
+    </Fragment>,
+    <Fragment>
+      Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
+      Sound...
+    </Fragment>,
+    <Fragment>Another example message...</Fragment>,
+  ];
+
+export { data, scrollerMessages };
