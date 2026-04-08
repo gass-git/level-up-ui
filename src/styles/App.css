@@ -21,7 +21,7 @@
  */
 body {
   background: #04142d;
-  /*background-image: url("../assets/images/cave-bg.jpg");*/
+  background-image: url("../assets/images/cave-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   margin: 0;

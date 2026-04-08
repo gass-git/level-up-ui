@@ -1,4 +1,4 @@
-import avatar from "../assets/images/avatar-img.png";
+import avatar from "../assets/images/paladin.png";
 import { config } from "../config";
 
 export default function Profile() {

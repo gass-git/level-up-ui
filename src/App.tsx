@@ -1,12 +1,16 @@
 import * as C from "./components";
 import { Route, Routes, BrowserRouter, Navigate } from "react-router";
 import { config } from "./config";
+import ambienceTrack from "./assets/sounds/fantasy-cave-ambience.mp3"
 import "./styles/App.css";
+import useSound from "use-sound";
 
 export default function App() {
+  const [playAmbience, {stop}] = useSound(ambienceTrack, {loop: true, volume: 0.1});
+
   return (
     <BrowserRouter>
-      <div className="col-flexbox">
+      <div className="col-flexbox" onMouseEnter={() => playAmbience()} onMouseLeave={() => stop()}>
         <main style={{ width: config.width, margin: `50px auto 0 auto` }}>
           <section className="row">
             <C.Scroller />
