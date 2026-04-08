@@ -1,5 +1,5 @@
 export default function Drops() {
-  const drops = Array.from({ length: 5 });
+  const drops = Array.from({ length: 2 });
 
   return (
     <div className="drops-container">
