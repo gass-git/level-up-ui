@@ -49,7 +49,6 @@
   from {
     transform: translateX(100%);
   }
-
   to {
     transform: translateX(-100%);
   }
@@ -57,5 +56,15 @@
 @keyframes fall {
   to {
     transform: translateY(90vh);
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: -100px;
   }
 }

@@ -177,6 +177,15 @@ code {
   transform: scale(0.85);
 }
 
+.fa-icon {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.4);
+  transition: 500ms;
+}
+.fa-icon:hover {
+  color: rgb(255, 255, 255, 0.7);
+}
+
 .username {
   font-family: "press start 2p", sans-serif;
   font-size: 14px;
@@ -284,4 +293,13 @@ footer a {
 footer .credit-link {
   margin-top: 1px;
   color: rgb(255, 248, 157, 0.9);
+}
+
+.float {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  animation-name: fade-up;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
 }
