@@ -30,8 +30,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none !important;
+  color: rgb(236, 184, 41);
+  text-shadow: var(--text-shadow);
+}
+
+a:hover {
+  color: rgb(245, 214, 112);
+}
+
+.highlight {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
 main > * {
   margin-bottom: 2px;
+}
+
+.col-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.row-flexbox {
+  display: flex;
+  flex-direction: row;
 }
 
 .content {
@@ -47,19 +74,25 @@ main > * {
   text-shadow: var(--text-shadow);
 }
 
-a {
-  text-decoration: none !important;
-  color: rgb(236, 184, 41);
-  text-shadow: var(--text-shadow);
+.rpg-border {
+  margin: 0 auto;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 19px;
+  border-image: url("../assets/images/border-60px.png") 19 round;
 }
 
-a:hover {
-  color: rgb(245, 214, 112);
-}
-
-.highlight {
-  border-bottom: 1px solid rgb(255, 255, 255, 0.4);
-  font-style: italic;
+.flex-container {
+  display: flex;
+  border-radius: 3px;
+  margin: -14px -14px 0 -14px;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(38, 51, 107, 0.75),
+    rgb(38, 51, 107, 0.75) 1px,
+    rgba(35, 41, 63, 0.85) 2px,
+    rgba(32, 39, 66, 0.85) 3px
+  );
 }
 
 .arrow-box {
@@ -76,20 +109,8 @@ a:hover {
   animation: arrow-flicker 1300ms infinite;
 }
 
-code {
-  font-family:
-    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
 .shadow-08 {
   filter: drop-shadow(0px 0px 1px rgb(0, 0, 0, 0.8));
-}
-
-.shadow-04 {
-  filter: drop-shadow(0px 0px 1px rgb(0, 0, 0, 0.4));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .menu {
@@ -126,49 +147,6 @@ code {
 
 .menu > *:hover {
   background: rgba(255, 255, 255, 0.1);
-}
-
-.col-flexbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
-.row-flexbox {
-  display: flex;
-  flex-direction: row;
-}
-
-.drop {
-  position: absolute;
-  top: -50px;
-  width: 6px;
-  height: 10px;
-  background: rgba(173, 216, 230, 0.7);
-  border-radius: 50%;
-  animation: fall linear infinite;
-}
-
-.rpg-border {
-  margin: 0 auto;
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 19px;
-  border-image: url("../assets/images/border-60px.png") 19 round;
-}
-
-.flex-container {
-  display: flex;
-  border-radius: 3px;
-  margin: -14px -14px 0 -14px;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(38, 51, 107, 0.75),
-    rgb(38, 51, 107, 0.75) 1px,
-    rgba(35, 41, 63, 0.85) 2px,
-    rgba(32, 39, 66, 0.85) 3px
-  );
 }
 
 .avatar {
@@ -260,6 +238,25 @@ code {
   color: rgb(241, 190, 50, 0.8);
 }
 
+.floating-text {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  animation-name: fade-up;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+}
+
+.water-drop {
+  position: absolute;
+  top: -50px;
+  width: 6px;
+  height: 10px;
+  background: rgba(173, 216, 230, 0.7);
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
 footer {
   display: flex;
   margin-top: 5rem;
@@ -293,13 +290,4 @@ footer a {
 footer .credit-link {
   margin-top: 1px;
   color: rgb(255, 248, 157, 0.9);
-}
-
-.float {
-  position: absolute;
-  font-size: 14px;
-  color: white;
-  animation-name: fade-up;
-  animation-duration: 3000ms;
-  animation-iteration-count: 1;
 }

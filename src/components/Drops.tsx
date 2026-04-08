@@ -6,7 +6,7 @@ export default function Drops() {
       {drops.map((_, i) => (
         <div
           key={i}
-          className="drop"
+          className="water-drop"
           style={{
             left: `${Math.random() * 100}%`,
             animationDuration: `${1 + Math.random() * 2}s`,

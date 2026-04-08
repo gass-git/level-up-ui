@@ -87,7 +87,7 @@ export default function Links() {
           <div onClick={() => copyText("g.szada@gmail.com")} title="Copy email">
             {showEffect ? (
               <div style={{ position: `relative` }}>
-                <span className="float">e-mail copied</span>
+                <span className="floating-text">e-mail copied</span>
               </div>
             ) : null}
 
