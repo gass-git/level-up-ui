@@ -92,6 +92,40 @@ code {
   opacity: 0;
 }
 
+.menu {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+}
+.menu > * {
+  display: flex;
+  border-radius: 3px;
+  text-shadow: var(--text-shadow);
+  margin: 5px 7px 5px 5px;
+  height: 33px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.menu .slider {
+  position: absolute;
+  z-index: 1;
+  border-radius: 3px;
+  top: 0;
+  width: 93%;
+  height: 33px;
+  background: rgb(255, 255, 255, 0.3);
+  transition: 300ms;
+  border: 1px solid rgba(208, 255, 0, 0.1);
+  animation: main-menu-waver 1500ms infinite;
+}
+
+.menu > *:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .col-flexbox {
   display: flex;
   flex-direction: column;

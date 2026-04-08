@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 const data = {
-  1: [
+  0: [
     <Fragment>
       For me coding is a{" "}
       <span className="highlight">catalyst for creation</span>, to portray an
@@ -25,7 +25,7 @@ const data = {
       for the pure joy of it.
     </Fragment>,
   ],
-  2: [
+  1: [
     <Fragment>
       In eget blandit ex. Etiam gravida malesuada leo ut pulvinar. Sed cursus
       mollis faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
@@ -39,9 +39,17 @@ const data = {
       eget ultricies sed, pretium nec massa. Vivamus eros urna, sodales.
     </Fragment>,
   ],
-  3: [
+  2: [
     <Fragment>
       section 3 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
+      faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
+      bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
+      consectetur ligula ut placerat.
+    </Fragment>,
+  ],
+  3: [
+    <Fragment>
+      section 4 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
       faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
       bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
       consectetur ligula ut placerat.
@@ -55,26 +63,18 @@ const data = {
       consectetur ligula ut placerat.
     </Fragment>,
   ],
-  5: [
-    <Fragment>
-      section 4 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
-      faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
-      bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
-      consectetur ligula ut placerat.
-    </Fragment>,
-  ],
 };
 
 const scrollerMessages = [
-    <Fragment>
-      Welcome fellow visitor from Planet Earth ! I'm glad you came by, feel free
-      to take a look around...
-    </Fragment>,
-    <Fragment>
-      Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
-      Sound...
-    </Fragment>,
-    <Fragment>Another example message...</Fragment>,
-  ];
+  <Fragment>
+    Welcome fellow visitor from Planet Earth ! I'm glad you came by, feel free
+    to take a look around...
+  </Fragment>,
+  <Fragment>
+    Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
+    Sound...
+  </Fragment>,
+  <Fragment>Another example message...</Fragment>,
+];
 
 export { data, scrollerMessages };

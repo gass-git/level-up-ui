@@ -5,9 +5,9 @@ export default function Profile() {
   return (
     <div
       className="rpg-border"
-      style={{ height: `171px`, width: config.profileWidth }}
+      style={{ height: `168px`, width: config.profileWidth }}
     >
-      <div className="flex-container" style={{ height: `200px` }}>
+      <div className="flex-container" style={{ height: `196px` }}>
         <img src={avatar} className="avatar" alt="" />
 
         <div style={{ padding: `20px 0 0 20px`, minWidth: `140px` }}>
