@@ -276,14 +276,13 @@ footer .credits {
   margin: 9px auto;
 }
 
-footer .credits .txt {
-  margin-top: 1px;
-  display: inline-block;
-}
-
 footer a {
   text-decoration: none !important;
   color: white;
+}
+
+footer span{
+  padding: 1px 0 0 5px;
 }
 
 footer .credit-link {

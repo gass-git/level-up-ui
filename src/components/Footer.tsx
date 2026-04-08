@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
-import space from "../utils/spaces.tsx";
 
 export default function FooterContent() {
   return (
@@ -16,13 +15,12 @@ export default function FooterContent() {
           alt="size"
         />
       </a>
-      {space(3)}
-      <div className="txt">
-        -{space(2)}
+      <span>
+        -
         inspired by
-      </div>
+      </span>
       <FontAwesomeIcon
-        style={{ margin: "-1px 5px 0 5px", fontSize: "19px", opacity: "0.9" }}
+        style={{ margin: "0px 5px 0 5px", fontSize: "19px", opacity: "0.9" }}
         icon={faGamepad}
       />
       <a
@@ -31,13 +29,11 @@ export default function FooterContent() {
         target="_blank"
         rel="noreferrer"
       >
-        RPG maker
+        rpg maker
       </a>
-      <div className="txt">
-        {space(1)}
+      <span>
         designs
-        {space(1)}
-      </div>
+      </span>
     </div>
   );
 }
