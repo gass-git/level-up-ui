@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../styles/Links.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStackOverflow,
@@ -16,14 +15,14 @@ export default function Links() {
   const [playClickSound] = useSound(clickSound, { volume: 0.8 });
   const [playCopySound] = useSound(copySound, { volume: 0.2 });
   const [showEffect, setShowEffect] = useState(false);
+  const floatingTextDuration = 2000; // ms
 
-  function copyText(entryText) {
+  function copyText(entryText: string) {
     navigator.clipboard.writeText(entryText);
-    setShowEffect(true);
-    setTimeout(() => {
-      setShowEffect(false);
-    }, 2000);
+
     playCopySound();
+    setShowEffect(true);
+    setTimeout(() => setShowEffect(false), floatingTextDuration);
   }
 
   return (
@@ -87,7 +86,12 @@ export default function Links() {
           <div onClick={() => copyText("g.szada@gmail.com")} title="Copy email">
             {showEffect ? (
               <div style={{ position: `relative` }}>
-                <span className="floating-text">e-mail copied</span>
+                <span
+                  className="floating-text"
+                  style={{ animationDuration: `${floatingTextDuration}ms` }}
+                >
+                  e-mail copied
+                </span>
               </div>
             ) : null}
 

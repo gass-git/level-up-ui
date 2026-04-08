@@ -243,7 +243,6 @@ main > * {
   font-size: 14px;
   color: white;
   animation-name: fade-up;
-  animation-duration: 3000ms;
   animation-iteration-count: 1;
 }
 
