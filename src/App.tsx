@@ -7,26 +7,26 @@ export default function App() {
   return (
     <BrowserRouter>
       <section className="col-flexbox">
-        <main style={{ width: config.width, margin:`50px auto 0 auto` }}>
-          <section className="first-row">
+        <main style={{ width: config.width, margin: `50px auto 0 auto` }}>
+          <section className="row">
             <C.Scroller />
           </section>
 
-          <section className="second-row">
-            <div className="left-side">
+          <section className="row-flexbox">
+            <div style={{ width: `100%`, marginRight: `2px` }}>
               <C.MainMenu />
             </div>
 
-            <div className="right-side">
-              <C.BasicInfo />
+            <div>
+              <C.Profile />
             </div>
           </section>
 
-          <section className="third-row">
+          <section>
             <C.MainContent />
           </section>
 
-          <section className="fourth-row">
+          <section>
             <C.Links />
           </section>
         </main>

@@ -4,9 +4,8 @@
 @import url("./Keyframes.css");
 
 :root {
-  --text-shadow: -1px 0 rgb(0, 0, 0, 0.3),
-    0 1px rgb(0, 0, 0, 0.3),
-    1px 0 rgb(0, 0, 0, 0.3),
+  --text-shadow:
+    -1px 0 rgb(0, 0, 0, 0.3), 0 1px rgb(0, 0, 0, 0.3), 1px 0 rgb(0, 0, 0, 0.3),
     0 -1px rgb(0, 0, 0, 0.3);
 }
 
@@ -31,6 +30,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main > * {
+  margin-bottom: 2px;
+}
+
 .content {
   width: 92%;
   text-align: justify;
@@ -41,13 +44,13 @@ body {
   font-size: 16px;
   color: white;
   margin: 25px auto 5px auto;
-  text-shadow: var(--text-shadow);   
+  text-shadow: var(--text-shadow);
 }
 
 a {
   text-decoration: none !important;
-  color:rgb(236, 184, 41);
-  text-shadow: var(--text-shadow);   
+  color: rgb(236, 184, 41);
+  text-shadow: var(--text-shadow);
 }
 
 a:hover {
@@ -75,8 +78,7 @@ a:hover {
 
 code {
   font-family:
-    source-code-pro, 
-    Menlo, Monaco, Consolas, "Courier New", monospace;
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .shadow-08 {
   filter: drop-shadow(0px 0px 1px rgb(0, 0, 0, 0.8));
@@ -90,51 +92,16 @@ code {
   opacity: 0;
 }
 
-.col-flexbox{
-  display:flex;
+.col-flexbox {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
 
-.first-row {
-  display: block;
-  position: relative;
-}
-
-.second-row {
+.row-flexbox {
   display: flex;
-  position: relative;
-}
-
-.second-row .left-side {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.second-row .right-side {
-  padding-left: 3px;
-}
-
-.third-row {
-  position: relative;
-  display: flex;
-}
-
-.third-row .border-img {
-  margin: 3px auto;
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 19px;
-  border-image: url("../assets/images/border-60px.png") 19 round;
-  width: 820px;
-  height: 240px;
-  z-index: 2;
-}
-
-.fourth-row {
-  position: relative;
+  flex-direction: row;
 }
 
 .drop {
@@ -178,7 +145,7 @@ code {
   font-family: "press start 2p", sans-serif;
   font-size: 14px;
   color: rgb(255, 255, 255, 1);
-  text-shadow:var(--text-shadow);
+  text-shadow: var(--text-shadow);
 }
 
 .sub-username {
@@ -186,7 +153,7 @@ code {
   font-family: "play", sans-serif;
   font-size: 17px;
   color: white;
-  text-shadow:(var(--text-shadow));
+  text-shadow: (var(--text-shadow));
 }
 
 .profile-attributes {
@@ -203,7 +170,7 @@ code {
   font-size: 17px;
   color: white;
   border-bottom: 1px solid rgb(255, 255, 255, 0.3);
-  text-shadow:var(--text-shadow);
+  text-shadow: var(--text-shadow);
 }
 
 .profile-attributes label {
@@ -250,7 +217,7 @@ code {
 
 footer {
   display: flex;
-  margin-top:5rem;
+  margin-top: 5rem;
   width: 100%;
   font-weight: 300;
   height: 34px;

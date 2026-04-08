@@ -1,13 +1,9 @@
 import { Routes, Route, Navigate } from "react-router";
 import Section from "./Section";
-import { config } from "../config";
 
 export default function Content() {
   return (
-    <div
-      className="rpg-border"
-      style={{ height: `243px`, width: config.width }}
-    >
+    <div className="rpg-border" style={{ height: `243px` }}>
       <div className="flex-container" style={{ height: `271px` }}>
         <Routes>
           <Route path="*" element={<Navigate to="/" />} />

@@ -3,7 +3,6 @@ import "../styles/MainMenu.css";
 import useSound from "use-sound";
 import selectionSound from "../assets/sounds/game-selection-sound.wav";
 import { useLocation, useNavigate } from "react-router";
-import { config } from "../config";
 
 export default function MainMenu() {
   const [floorNumber, setFloorNumber] = useState(1);
@@ -22,11 +21,8 @@ export default function MainMenu() {
 
   return (
     <div className="main-menu">
-      <div
-        className="rpg-border"
-        style={{ height: `171px` }}
-      >
-        <div className="flex-container" style={{height:`200px`}}>
+      <div className="rpg-border" style={{ height: `171px` }}>
+        <div className="flex-container" style={{ height: `200px` }}>
           <div className="menu-wrapper">
             <div className="option" onClick={() => goto(1)}>
               <div className="label">section 1</div>

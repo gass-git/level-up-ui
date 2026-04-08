@@ -3,9 +3,9 @@ import Footer from "./Footer";
 import Links from "./Links";
 import MainMenu from "./MainMenu";
 import MainContent from "./MainContent";
-import Scroller from "./Scroller";
 import Profile from "./Profile";
-import BasicInfo from "./Profile";
+import Scroller from "./Scroller";
+import Section from "./Section";
 
 export {
   Drops,
@@ -15,5 +15,5 @@ export {
   MainContent,
   Profile,
   Scroller,
-  BasicInfo,
+  Section,
 };
