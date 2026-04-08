@@ -41,7 +41,7 @@ const data = {
   ],
   2: [
     <Fragment>
-      section 3 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
+      section 2 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
       faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
       bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
       consectetur ligula ut placerat.
@@ -49,7 +49,7 @@ const data = {
   ],
   3: [
     <Fragment>
-      section 4 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
+      section 3 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
       faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
       bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
       consectetur ligula ut placerat.
@@ -59,8 +59,7 @@ const data = {
     <Fragment>
       section 4 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
       faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
-      bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
-      consectetur ligula ut placerat.
+      bibendum.
     </Fragment>,
   ],
 };
