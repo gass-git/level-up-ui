@@ -4,25 +4,37 @@ import { config } from "./config";
 import ambienceTrack from "./assets/sounds/fantasy-cave-ambience.mp3";
 import "./styles/App.css";
 import useSound from "use-sound";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
-  const [playAmbience] = useSound(ambienceTrack, {
+  const [playAmbience, {stop}] = useSound(ambienceTrack, {
     loop: true,
     volume: 0.1,
   });
-  const [playing, setPlaying] = useState(false);
+  const [ambience, setAmbience] = useState({isActive: false, muted: false});
 
-  function handleAmbience() {
-    if (!playing) {
+  useEffect(() => {
+    if(ambience.muted){
+      stop();
+      setAmbience({...ambience, isActive: false})
+    }
+    else{
       playAmbience();
-      setPlaying(true);
+    }
+  },[ambience.muted])
+
+  function handleOnMouseEnter() {
+    if (!ambience.isActive && !ambience.muted) {
+      playAmbience();
+      setAmbience({...ambience, isActive: true});
     }
   }
 
   return (
     <BrowserRouter>
-      <div className="col-flexbox" onMouseEnter={() => handleAmbience()}>
+      <div className="col-flexbox" onMouseEnter={() => handleOnMouseEnter()}>
+        <C.Muter ambience={ambience} setAmbience={setAmbience} />
+        
         <main style={{ width: config.width, margin: `50px auto 0 auto` }}>
           <section className="row">
             <C.Scroller />

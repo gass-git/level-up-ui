@@ -256,6 +256,31 @@ main > * {
   animation: fall linear infinite;
 }
 
+.sound-icon{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  width: 32px;
+  height: 30px;
+  cursor: pointer;
+
+  span{
+    width: 6px;
+    height: 100%;
+    margin-right:2px;
+    border-radius: 1px;
+    background: white;
+    opacity: 0.4;
+    animation: bounce 5s infinite alternate;
+    transform-origin: bottom;
+  }
+}
+
+.sound-icon:hover > span{
+  opacity: 0.7;
+}
+
 footer {
   display: flex;
   margin-top: 5rem;
