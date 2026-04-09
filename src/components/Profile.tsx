@@ -10,27 +10,32 @@ export default function Profile() {
       <div className="flex-container" style={{ height: `196px` }}>
         <img src={avatar} className="avatar" alt="" />
 
-        <div style={{ padding: `20px 0 0 20px`, minWidth: `140px` }}>
-          <div className="username">username</div>
-          <div className="sub-username">subtitle</div>
+        <div
+          style={{
+            padding: `20px 10px 0 10px`,
+            minWidth: `140px`,
+          }}
+        >
+          <div className="username">Hayashiro</div>
+          <div className="sub-username">Paladin</div>
         </div>
 
         <div className="profile-attributes">
           <div>
-            <label>field 1</label>
-            <data>value</data>
+            <label>experience</label>
+            <data>241043</data>
           </div>
           <div>
-            <label>field 2</label>
-            <data>value</data>
+            <label>health</label>
+            <data>1230</data>
           </div>
           <div>
-            <label>field 3</label>
-            <data>value</data>
+            <label>distance</label>
+            <data>71</data>
           </div>
           <div>
-            <label>field 4</label>
-            <data>value</data>
+            <label>speed</label>
+            <data>43</data>
           </div>
         </div>
       </div>

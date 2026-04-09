@@ -7,26 +7,25 @@ import useSound from "use-sound";
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [playAmbience, {stop}] = useSound(ambienceTrack, {
+  const [playAmbience, { stop }] = useSound(ambienceTrack, {
     loop: true,
     volume: 0.1,
   });
-  const [ambience, setAmbience] = useState({isActive: false, muted: false});
+  const [ambience, setAmbience] = useState({ isActive: false, muted: false });
 
   useEffect(() => {
-    if(ambience.muted){
+    if (ambience.muted) {
       stop();
-      setAmbience({...ambience, isActive: false})
-    }
-    else{
+      setAmbience({ ...ambience, isActive: false });
+    } else {
       playAmbience();
     }
-  },[ambience.muted])
+  }, [ambience.muted]);
 
   function handleOnMouseEnter() {
     if (!ambience.isActive && !ambience.muted) {
       playAmbience();
-      setAmbience({...ambience, isActive: true});
+      setAmbience({ ...ambience, isActive: true });
     }
   }
 
@@ -35,7 +34,7 @@ export default function App() {
       <div className="col-flexbox" onMouseEnter={() => handleOnMouseEnter()}>
         <C.Drops />
         <C.Muter ambience={ambience} setAmbience={setAmbience} />
-        
+
         <main style={{ width: config.width, margin: `50px auto 0 auto` }}>
           <section className="row">
             <C.Scroller />

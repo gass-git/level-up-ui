@@ -3,26 +3,17 @@ import { Fragment } from "react";
 const data = {
   0: [
     <Fragment>
-      For me coding is a{" "}
-      <span className="highlight">catalyst for creation</span>, to portray an
-      idea into reality and be able to interact with it anywhere on the world I
-      find it to be fascinating, it is the{" "}
-      <span className="highlight">reason</span> I got hooked at age 15 with my
-      first website. This <span className="highlight">feeling</span> is
-      something I always try to tap into when I'm developing projects...
+      A devout paladin whose presence carries both warmth and quiet authority.
+      Once burdened by a choice that cost innocent lives, she has sworn herself
+      to the light in pursuit of redemption. Clad in radiant armor and guided by
+      sacred vows, she walks the line between compassion and judgment, offering
+      mercy where she can{" "}
+      <span className="highlight">and steel where she must</span>.
     </Fragment>,
     <Fragment>
-      My main interest is to{" "}
-      <span className="highlight"> enjoy the process and challenges</span> that
-      appear on the coding coast but at the same time make cool things and
-      hopefully <span className="highlight">add value to peoples lifes</span>...
-    </Fragment>,
-    <Fragment>
-      This is mainly where I want to be, in the{" "}
-      <span className="highlight">world of ideas</span>, logic and{" "}
-      <span className="highlight">mental labyrinth</span>. The hunger for
-      challenge is never satisfied, so I'm always pushing myself to go beyond,
-      for the pure joy of it.
+      She is as devoted to restoring her own honor as she is to seeing your
+      quest fulfilled, believing that through service and sacrifice, even the
+      deepest wounds of the soul can be made whole.
     </Fragment>,
   ],
   1: [

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faStackOverflow,
+  faXTwitter,
   faGithub,
-  faLinkedin,
-  faNpm,
+  faLinkedinIn,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import useSound from "use-sound";
@@ -37,7 +37,7 @@ export default function Links() {
         >
           <a
             onClick={() => playClickSound()}
-            href="https://github.com/gass-git"
+            href="https://github.com/gass-git/level-up-ui"
             target="_blank"
             rel="noreferrer"
           >
@@ -49,41 +49,41 @@ export default function Links() {
           </a>
           <a
             onClick={() => playClickSound()}
-            href="https://stackoverflow.com/users/14895985/gass?tab=profile"
+            href="https://x.com"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
-              icon={faStackOverflow}
+              icon={faXTwitter}
               style={{ fontSize: "36px" }}
               className="fa-icon"
             />
           </a>
           <a
             onClick={() => playClickSound()}
-            href="https://www.linkedin.com/in/gabriel-salinas-szada-7a188196"
+            href="https://www.linkedin.com/"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
-              icon={faLinkedin}
+              icon={faLinkedinIn}
               style={{ fontSize: "36px", marginLeft: "6px" }}
               className="fa-icon"
             />
           </a>
           <a
             onClick={() => playClickSound()}
-            href="https://www.npmjs.com/~gass-npm"
+            href="https://www.youtube.com"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
-              icon={faNpm}
+              icon={faYoutube}
               style={{ fontSize: "33px", marginTop: "2px" }}
               className="fa-icon"
             />
           </a>
-          <div onClick={() => copyText("g.szada@gmail.com")} title="Copy email">
+          <div onClick={() => copyText("some@email.com")} title="Copy email">
             {showEffect ? (
               <div style={{ position: `relative` }}>
                 <span

@@ -253,11 +253,11 @@ main > * {
   height: 10px;
   background: rgba(173, 216, 230, 0.7);
   border-radius: 50%;
-  animation: fall linear; 
+  animation: fall linear;
   overflow: hidden;
 }
 
-.sound-icon{
+.sound-icon {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -267,10 +267,10 @@ main > * {
   height: 30px;
   cursor: pointer;
 
-  span{
+  span {
     width: 6px;
     height: 100%;
-    margin-right:2px;
+    margin-right: 2px;
     border-radius: 1px;
     background: white;
     opacity: 0.4;
@@ -279,7 +279,7 @@ main > * {
   }
 }
 
-.sound-icon:hover > span{
+.sound-icon:hover > span {
   opacity: 0.7;
 }
 
@@ -308,7 +308,7 @@ footer a {
   color: white;
 }
 
-footer span{
+footer span {
   padding: 1px 0 0 5px;
 }
 
