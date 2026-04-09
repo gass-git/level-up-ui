@@ -253,7 +253,8 @@ main > * {
   height: 10px;
   background: rgba(173, 216, 230, 0.7);
   border-radius: 50%;
-  animation: fall linear infinite;
+  animation: fall linear; 
+  overflow: hidden;
 }
 
 .sound-icon{
@@ -261,7 +262,8 @@ main > * {
   top: 20px;
   right: 20px;
   display: flex;
-  width: 32px;
+  align-items: start;
+  width: 40px;
   height: 30px;
   cursor: pointer;
 

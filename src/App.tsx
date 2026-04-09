@@ -33,6 +33,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="col-flexbox" onMouseEnter={() => handleOnMouseEnter()}>
+        <C.Drops />
         <C.Muter ambience={ambience} setAmbience={setAmbience} />
         
         <main style={{ width: config.width, margin: `50px auto 0 auto` }}>

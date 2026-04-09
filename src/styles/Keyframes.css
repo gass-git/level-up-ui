@@ -55,7 +55,7 @@
 }
 @keyframes fall {
   to {
-    transform: translateY(90vh);
+    transform: translateY(99vh);
   }
 }
 @keyframes fade-up {
