@@ -121,28 +121,30 @@ main > * {
   color: white;
 }
 
+.menu .option{
+  display: flex;
+  border-radius: 3px;
+  text-shadow: var(--text-shadow);
+  padding-left: 50px;
+  margin: 5px 7px 5px 7px;
+  height: 33px;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
 .menu .slider {
   position: absolute;
   z-index: 1;
+  margin: 5px 7px 5px 7px;
   border-radius: 3px;
   top: 0;
   width: 92%;
-  height: 33px;
+  height: 31px;
   background: rgb(255, 255, 255, 0.3);
   transition: 300ms;
   border: 1px solid rgba(208, 255, 0, 0.1);
   animation: main-menu-waver 1500ms infinite;
-}
-
-.menu > * {
-  display: flex;
-  border-radius: 3px;
-  text-shadow: var(--text-shadow);
-  margin: 5px 7px 5px 7px;
-  height: 33px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 .menu > *:hover {

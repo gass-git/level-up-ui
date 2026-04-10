@@ -22,12 +22,17 @@ export default function Menu() {
     <div className="rpg-border" style={{ height: `168px` }}>
       <div className="flex-container" style={{ height: `196px` }}>
         <div className="menu">
-          {[0, 1, 2, 3, 4].map((n) => (
-            <div key={n} onClick={() => goto(n)}>
+          <div className="option" key="0" onClick={() => goto(0)}>
+            profile
+          </div>
+          <div className="option" key="1" onClick={() => goto(1)}>
+            spellbook
+          </div>
+          {[ 2, 3, 4].map((n) => (
+            <div className="option" key={n} onClick={() => goto(n)}>
               section {n}
             </div>
           ))}
-
           <div
             className="slider"
             style={{ transform: `translateY(${floor * 38}px)` }}

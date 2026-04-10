@@ -17,7 +17,7 @@ export default function Profile() {
           }}
         >
           <div className="username">Hayashiro</div>
-          <div className="sub-username">Paladin</div>
+          <div className="sub-username">Demon Hunter</div>
         </div>
 
         <div className="profile-attributes">
