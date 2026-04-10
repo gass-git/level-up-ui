@@ -16,7 +16,8 @@ export default function Menu() {
   }, [location]);
 
   function goto(pathName: string, i: number) {
-    navigate(pathName, { state: i });
+    // Do not add the pathname to the route if it is the starting option of the menu.
+    navigate(i == 0 ? "" : pathName, { state: i });
   }
 
   return (
