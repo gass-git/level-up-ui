@@ -15,6 +15,10 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: https://gass-git.github.io/blazed-past-us/
+
     steps:
       - uses: actions/checkout@v4
 
