@@ -17,7 +17,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: https://gass-git.github.io/blazed-past-us/
+      url: https://gass-git.github.io/level-up-ui/
 
     steps:
       - uses: actions/checkout@v4
