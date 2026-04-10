@@ -55,12 +55,13 @@ export default function App() {
               <div className="flex-container" style={{ height: `271px` }}>
                 <Routes>
                   <Route path="*" element={<Navigate to="/" />} />
-                  <Route path="/" element={<C.Section n="0" />} />
-                  <Route path="section-0" element={<Navigate to="/" />} />
-                  <Route path="section-1" element={<C.Section n="1" />} />
-                  <Route path="section-2" element={<C.Section n="2" />} />
-                  <Route path="section-3" element={<C.Section n="3" />} />
-                  <Route path="section-4" element={<C.Section n="4" />} />
+                  <Route path="/" element={<C.Section k={config.sections[0]} />} />
+                  {
+                    config.sections.map((name) => (
+                        <Route path={name} element={<C.Section k={name} />} />
+                      )
+                    )
+                  }
                 </Routes>
               </div>
             </div>

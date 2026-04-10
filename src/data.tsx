@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 const data = {
-  0: [
+  profile: [
     <Fragment>
       A devout paladin whose presence carries both warmth and quiet authority.
       Once burdened by a choice that cost innocent lives, she has sworn herself
@@ -16,7 +16,7 @@ const data = {
       deepest wounds of the soul can be made whole.
     </Fragment>,
   ],
-  1: [
+  spellbook: [
     <Fragment>
       In eget blandit ex. Etiam gravida malesuada leo ut pulvinar. Sed cursus
       mollis faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
@@ -30,7 +30,7 @@ const data = {
       eget ultricies sed, pretium nec massa. Vivamus eros urna, sodales.
     </Fragment>,
   ],
-  2: [
+  abilities: [
     <Fragment>
       section 2 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
       faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
@@ -38,7 +38,7 @@ const data = {
       consectetur ligula ut placerat.
     </Fragment>,
   ],
-  3: [
+  statistics: [
     <Fragment>
       section 3 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
       faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
@@ -46,7 +46,7 @@ const data = {
       consectetur ligula ut placerat.
     </Fragment>,
   ],
-  4: [
+  equipment: [
     <Fragment>
       section 4 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
       faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium

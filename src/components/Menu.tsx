@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useSound from "use-sound";
 import selectionSound from "../assets/sounds/game-selection-sound.wav";
 import { useLocation, useNavigate } from "react-router";
+import { config } from "../config";
 
 export default function Menu() {
   const [floor, setFloor] = useState(0);
@@ -14,23 +15,17 @@ export default function Menu() {
     setFloor(location.state);
   }, [location]);
 
-  function goto(n: number) {
-    navigate(`/section-${n}`, { state: n });
+  function goto(pathName: string, i: number) {
+    navigate(pathName, { state: i });
   }
 
   return (
     <div className="rpg-border" style={{ height: `168px` }}>
       <div className="flex-container" style={{ height: `196px` }}>
         <div className="menu">
-          <div className="option" key="0" onClick={() => goto(0)}>
-            profile
-          </div>
-          <div className="option" key="1" onClick={() => goto(1)}>
-            spellbook
-          </div>
-          {[ 2, 3, 4].map((n) => (
-            <div className="option" key={n} onClick={() => goto(n)}>
-              section {n}
+          {config.sections.map((name, i) => (
+            <div className="option" key={name} onClick={() => goto(name, i)}>
+              {name}
             </div>
           ))}
           <div

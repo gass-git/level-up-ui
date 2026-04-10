@@ -8,15 +8,15 @@ import useSound from "use-sound";
 import tickSound from "../assets/sounds/tick-sound.wav";
 import { data } from "../data";
 
-export default function Section({ n }) {
+export default function Section({ k }) {
   const [current, setCurrent] = useState(0);
-  const [dataLength, setDataLength] = useState(data[n].length);
+  const [dataLength, setDataLength] = useState(data[k].length);
   const [playSound] = useSound(tickSound, { volume: 0.6 });
 
   useEffect(() => {
     setCurrent(0);
-    setDataLength(data[n].length);
-  }, [n]);
+    setDataLength(data[k].length);
+  }, [k]);
 
   function handleCurrent() {
     playSound();
@@ -35,7 +35,7 @@ export default function Section({ n }) {
   return (
     <section>
       <div className="content">
-        <Fragment>{data[n][current]}</Fragment>
+        <Fragment>{data[k][current]}</Fragment>
       </div>
       <div hidden={dataLength <= 1} className="arrow-box">
         <FontAwesomeIcon

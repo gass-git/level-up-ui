@@ -3,6 +3,7 @@ const config = {
   profileWidth: 610,
   scrollInterval: 20000, // ms
   waterDrops: false,
+  sections: ["profile", "spellbook", "abilities", "statistics", "equipment"],
 };
 
 export { config };
