@@ -4,4 +4,4 @@ React single page application, inspired by [RPG Maker](https://www.rpgmakerweb.c
 
 [Live demo](https://gass-git.github.io/level-up-ui/)
 
-![Showcase](./level-up-ui-2.png)
+![Showcase](showcase.png)
