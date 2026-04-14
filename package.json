@@ -14,7 +14,8 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "^7.14.0",
-    "use-sound": "^5.0.0"
+    "use-sound": "^5.0.0",
+    "use-viewport-width": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^24.12.0",

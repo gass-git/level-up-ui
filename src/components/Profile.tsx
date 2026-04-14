@@ -1,11 +1,14 @@
 import avatar from "../assets/images/paladin.png";
 import { config } from "../config";
+import useVW from "use-viewport-width";
 
 export default function Profile() {
+  const w = useVW(100);
+
   return (
     <div
       className="rpg-border"
-      style={{ height: `168px`, width: config.profileWidth }}
+      style={{ height: `168px`, width: w > 850 ? config.profileWidth : `` }}
     >
       <div className="flex-container" style={{ height: `196px` }}>
         <img src={avatar} className="avatar" alt="" />

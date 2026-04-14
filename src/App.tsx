@@ -5,6 +5,7 @@ import ambienceTrack from "./assets/sounds/fantasy-cave-ambience.mp3";
 import "./styles/App.css";
 import useSound from "use-sound";
 import { useEffect, useState } from "react";
+import useVW from "use-viewport-width";
 
 export default function App() {
   const [playAmbience, { stop }] = useSound(ambienceTrack, {
@@ -12,6 +13,8 @@ export default function App() {
     volume: 0.1,
   });
   const [ambience, setAmbience] = useState({ isActive: false, muted: false });
+  const w = useVW(100);
+
 
   useEffect(() => {
     if (ambience.muted) {
@@ -35,11 +38,14 @@ export default function App() {
         {config.waterDrops ? <C.Drops /> : null}
         <C.Muter ambience={ambience} setAmbience={setAmbience} />
 
-        <main style={{ width: config.width, margin: `50px auto 0 auto` }}>
+        <main style={{ width: w > 850 ? config.width : `${w*0.97}px`, minWidth: `550px`, margin: `50px auto 0 auto` }}>
           <section className="row">
             <C.Scroller />
           </section>
 
+
+          {
+          w > 850 ? 
           <section className="row-flexbox">
             <div style={{ width: `100%`, marginRight: `2px` }}>
               <C.Menu />
@@ -48,7 +54,17 @@ export default function App() {
             <div>
               <C.Profile />
             </div>
-          </section>
+          </section> :
+          <>
+            <section>
+              <C.Profile />
+            </section>
+            <section>
+              <C.Menu />
+            </section>
+          </>
+          }
+          
 
           <section>
             <div className="rpg-border" style={{ height: `243px` }}>
