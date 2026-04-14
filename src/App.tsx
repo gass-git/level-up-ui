@@ -30,7 +30,7 @@ export default function App() {
   }
 
   return (
-    <BrowserRouter basename="/level-up-ui">
+    <BrowserRouter basename={config.routerBasename}>
       <div className="col-flexbox" onMouseEnter={() => handleOnMouseEnter()}>
         {config.waterDrops ? <C.Drops /> : null}
         <C.Muter ambience={ambience} setAmbience={setAmbience} />

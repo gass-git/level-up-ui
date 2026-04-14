@@ -44,6 +44,7 @@ npm run build
 
 ### In `src/config.ts` you can configure the following:
 
+- Router basename (example: `/level-up-ui` in `gass-git.github.io/level-up-ui/`)
 - Width of the main container
 - Width in pixels of character profile summary next to the menu
 - Interval timer (ms) for top message scroller
