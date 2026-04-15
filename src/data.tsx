@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-const data = {
+const content = {
   profile: [
     <Fragment>
       A devout paladin whose presence carries both warmth and quiet authority.
@@ -67,4 +67,4 @@ const scrollerMessages = [
   <Fragment>Another example message...</Fragment>,
 ];
 
-export { data, scrollerMessages };
+export { content, scrollerMessages };

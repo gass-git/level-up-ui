@@ -6,22 +6,22 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import useSound from "use-sound";
 import tickSound from "../assets/sounds/tick-sound.wav";
-import { data } from "../data";
+import { content } from "../data";
 
 export default function Section({ k }) {
   const [current, setCurrent] = useState(0);
-  const [dataLength, setDataLength] = useState(data[k].length);
+  const [contentLength, setContentLength] = useState(content[k].length);
   const [playSound] = useSound(tickSound, { volume: 0.6 });
 
   useEffect(() => {
     setCurrent(0);
-    setDataLength(data[k].length);
+    setContentLength(content[k].length);
   }, [k]);
 
   function handleCurrent() {
     playSound();
 
-    if (current === dataLength - 1) {
+    if (current === contentLength - 1) {
       setCurrent(0);
     } else {
       setCurrent(current + 1);
@@ -29,15 +29,15 @@ export default function Section({ k }) {
   }
 
   function iconHandler() {
-    return current === dataLength - 1 ? faAngleDoubleUp : faCaretDown;
+    return current === contentLength - 1 ? faAngleDoubleUp : faCaretDown;
   }
 
   return (
     <section>
       <div className="content">
-        <Fragment>{data[k][current]}</Fragment>
+        <Fragment>{content[k][current]}</Fragment>
       </div>
-      <div hidden={dataLength <= 1} className="arrow-box">
+      <div hidden={contentLength <= 1} className="arrow-box">
         <FontAwesomeIcon
           className="icon shadow-08"
           icon={iconHandler()}
