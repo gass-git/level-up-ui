@@ -4,6 +4,8 @@ React single page application, inspired by [RPG Maker](https://www.rpgmakerweb.c
 
 [Live demo](https://gass-git.github.io/level-up-ui/)
 
+![Showcase](./showcase.png)
+
 ## Features
 
 ### ✔️ Configure different aspects of the app within a single config file
