@@ -43,7 +43,6 @@ export default function App() {
         <main
           style={{
             width: w > config.width ? config.width : `${w * 0.97}px`,
-            minWidth: `550px`,
             margin: `50px auto 0 auto`,
           }}
         >
@@ -75,11 +74,11 @@ export default function App() {
           <section>
             <div
               className="rpg-border"
-              style={{ height: w > config.width ? `243px` : `300px` }}
+              style={{ height: w > config.width ? `243px` : `400px` }}
             >
               <div
                 className="flex-container"
-                style={{ height: w > config.width ? `271px` : `328px` }}
+                style={{ height: w > config.width ? `271px` : `428px` }}
               >
                 <Routes>
                   <Route path="*" element={<Navigate to="/" />} />
