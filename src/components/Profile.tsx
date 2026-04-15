@@ -1,5 +1,6 @@
 import avatar from "../assets/images/paladin.png";
 import { config } from "../config";
+import { profile } from "../data";
 import useVW from "use-viewport-width";
 
 export default function Profile() {
@@ -7,22 +8,12 @@ export default function Profile() {
 
   const Attributes = () => (
     <div className="profile-attributes">
-      <div>
-        <label>experience</label>
-        <data>241043</data>
-      </div>
-      <div>
-        <label>health</label>
-        <data>1230</data>
-      </div>
-      <div>
-        <label>distance</label>
-        <data>71</data>
-      </div>
-      <div>
-        <label>speed</label>
-        <data>43</data>
-      </div>
+      {profile.attributes.map((it) => (
+        <div>
+          <label>{it.field}</label>
+          <data>{it.value}</data>
+        </div>
+      ))}
     </div>
   );
 
@@ -43,8 +34,8 @@ export default function Profile() {
             minWidth: `140px`,
           }}
         >
-          <div className="username">Hayashiro</div>
-          <div className="sub-username">Demon Hunter</div>
+          <div className="username">{profile.name}</div>
+          <div className="sub-username">{profile.vocation}</div>
         </div>
 
         {w > 550 ? <Attributes /> : null}

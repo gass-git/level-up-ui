@@ -53,7 +53,8 @@ npm run build
 - Enable or disable water drops effect on the background
 - Site sections
 
-### In `src/data.tsx` you can configure:
+### In `src/data.tsx` you can set:
 
-- The content being shown in each section
 - The messages been shown on the top scroller
+- The name, vocation and attributes of the character
+- The content being shown in each section

@@ -1,5 +1,28 @@
 import { Fragment } from "react";
 
+const scrollerMessages = [
+  <Fragment>
+    Welcome fellow visitor from Planet Earth ! I'm glad you came by, feel free
+    to take a look around...
+  </Fragment>,
+  <Fragment>
+    Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
+    Sound...
+  </Fragment>,
+  <Fragment>Another example message...</Fragment>,
+];
+
+const profile = {
+  name: "Hayashiro",
+  vocation: "Demon Hunter",
+  attributes: [
+    { field: "exprience", value: 241043 },
+    { field: "health", value: 1230 },
+    { field: "distance", value: 71 },
+    { field: "speed", value: 43 },
+  ],
+};
+
 const content = {
   profile: [
     <Fragment>
@@ -55,16 +78,4 @@ const content = {
   ],
 };
 
-const scrollerMessages = [
-  <Fragment>
-    Welcome fellow visitor from Planet Earth ! I'm glad you came by, feel free
-    to take a look around...
-  </Fragment>,
-  <Fragment>
-    Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
-    Sound...
-  </Fragment>,
-  <Fragment>Another example message...</Fragment>,
-];
-
-export { content, scrollerMessages };
+export { scrollerMessages, profile, content };
