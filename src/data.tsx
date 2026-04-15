@@ -3,14 +3,14 @@ import avatar from "../src/assets/images/paladin.png";
 
 const scrollerMessages = [
   <Fragment>
-    Welcome fellow visitor from Planet Earth ! I'm glad you came by, feel free
-    to take a look around...
+    Welcome, traveler. The light still holds but the shadows grow restless. Walk
+    carefully, and stay within the glow of faith..
   </Fragment>,
+  <Fragment>Not all that watches you in the dark is human..</Fragment>,
   <Fragment>
-    Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Axios & Use
-    Sound...
+    Web app using: Reactjs, Vite, FontAwesome, SVG Backgrounds, Use Sound...
   </Fragment>,
-  <Fragment>Another example message...</Fragment>,
+  <Fragment>Sounds from Zapsplat and Little Robot Sound Factory...</Fragment>,
 ];
 
 const profile = {
@@ -43,10 +43,13 @@ const content = {
   ],
   spellbook: [
     <Fragment>
-      In eget blandit ex. Etiam gravida malesuada leo ut pulvinar. Sed cursus
-      mollis faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
-      bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
-      consectetur ligula ut placerat. Sed sagittis neque erat, ultrices.
+      <span className="highlight">
+        SPELLBOOK SECTION - this is lorem ipsum content added for testing
+      </span>{" "}
+      - Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis faucibus.
+      Phasellus nec erat mi. Fusce ultricies dolor nec pretium bibendum. Cras
+      non purus a urna tincidunt scelerisque. Nunc lobortis consectetur ligula
+      ut placerat. Sed sagittis neque erat, ultrices.
     </Fragment>,
     <Fragment>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis
@@ -57,25 +60,30 @@ const content = {
   ],
   abilities: [
     <Fragment>
-      section 2 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
-      faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
-      bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
-      consectetur ligula ut placerat.
+      Trained in sacred combat and divine invocation, she can shield allies with
+      blessed wards, heal wounds through prayer, and smite foes with radiant
+      force when mercy is no longer an option. Her aura steadies the frightened
+      and silences the corrupt, often turning the tide of battle before steel is
+      even drawn.
     </Fragment>,
   ],
   statistics: [
     <Fragment>
-      section 3 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
-      faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
-      bibendum. Cras non purus a urna tincidunt scelerisque. Nunc lobortis
-      consectetur ligula ut placerat.
+      High strength and constitution, reflecting her mastery of armored combat
+      and endurance in prolonged battles. Strong wisdom fuels her divine magic
+      and judgment, while moderate charisma allows her to inspire allies and
+      command respect. Dexterity is lower due to heavy armor training, and
+      intelligence is average, focused more on doctrine and experience than
+      scholarship.
     </Fragment>,
   ],
   equipment: [
     <Fragment>
-      section 4 Etiam gravida malesuada leo ut pulvinar. Sed cursus mollis
-      faucibus. Phasellus nec erat mi. Fusce ultricies dolor nec pretium
-      bibendum.
+      Clad in radiant, holy-forged armor etched with protective runes, she
+      carries a blessed longsword that channels divine light into each strike. A
+      consecrated shield bears her oath sigil, able to deflect both blade and
+      dark magic alike, while a worn prayer book and sacred relics at her side
+      anchor her divine abilities and vows.
     </Fragment>,
   ],
 };
