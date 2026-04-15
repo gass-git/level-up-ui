@@ -3,12 +3,14 @@ import useSound from "use-sound";
 import selectionSound from "../assets/sounds/game-selection-sound.wav";
 import { useLocation, useNavigate } from "react-router";
 import { config } from "../config";
+import useVW from "use-viewport-width";
 
 export default function Menu() {
   const [floor, setFloor] = useState(0);
   const [playSwitchSound] = useSound(selectionSound, { volume: 1 });
   const navigate = useNavigate();
   const location = useLocation();
+  const w = useVW(100);
 
   useEffect(() => {
     playSwitchSound();
@@ -25,7 +27,15 @@ export default function Menu() {
       <div className="flex-container" style={{ height: `196px` }}>
         <div className="menu">
           {config.sections.map((name, i) => (
-            <div className="option" key={name} onClick={() => goto(name, i)}>
+            <div
+              className="option"
+              style={{
+                justifyContent: w < config.width ? `center` : `start`,
+                paddingLeft: w < config.width ? `0px` : `50px`,
+              }}
+              key={name}
+              onClick={() => goto(name, i)}
+            >
               {name}
             </div>
           ))}

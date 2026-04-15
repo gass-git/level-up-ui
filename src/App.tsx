@@ -15,7 +15,6 @@ export default function App() {
   const [ambience, setAmbience] = useState({ isActive: false, muted: false });
   const w = useVW(100);
 
-
   useEffect(() => {
     if (ambience.muted) {
       stop();
@@ -36,48 +35,61 @@ export default function App() {
     <BrowserRouter basename={config.routerBasename}>
       <div className="col-flexbox" onMouseEnter={() => handleOnMouseEnter()}>
         {config.waterDrops ? <C.Drops /> : null}
-        <C.Muter ambience={ambience} setAmbience={setAmbience} />
 
-        <main style={{ width: w > 850 ? config.width : `${w*0.97}px`, minWidth: `550px`, margin: `50px auto 0 auto` }}>
+        {w > config.width + 150 ? (
+          <C.Muter ambience={ambience} setAmbience={setAmbience} />
+        ) : null}
+
+        <main
+          style={{
+            width: w > config.width ? config.width : `${w * 0.97}px`,
+            minWidth: `550px`,
+            margin: `50px auto 0 auto`,
+          }}
+        >
           <section className="row">
             <C.Scroller />
           </section>
 
+          {w > config.width ? (
+            <section className="row-flexbox">
+              <div style={{ width: `100%`, marginRight: `2px` }}>
+                <C.Menu />
+              </div>
 
-          {
-          w > 850 ? 
-          <section className="row-flexbox">
-            <div style={{ width: `100%`, marginRight: `2px` }}>
-              <C.Menu />
-            </div>
-
-            <div>
-              <C.Profile />
-            </div>
-          </section> :
-          <>
-            <section>
-              <C.Profile />
+              <div>
+                <C.Profile />
+              </div>
             </section>
-            <section>
-              <C.Menu />
-            </section>
-          </>
-          }
-          
+          ) : (
+            <>
+              <section>
+                <C.Profile />
+              </section>
+              <section>
+                <C.Menu />
+              </section>
+            </>
+          )}
 
           <section>
-            <div className="rpg-border" style={{ height: `243px` }}>
-              <div className="flex-container" style={{ height: `271px` }}>
+            <div
+              className="rpg-border"
+              style={{ height: w > config.width ? `243px` : `300px` }}
+            >
+              <div
+                className="flex-container"
+                style={{ height: w > config.width ? `271px` : `328px` }}
+              >
                 <Routes>
                   <Route path="*" element={<Navigate to="/" />} />
-                  <Route path="/" element={<C.Section k={config.sections[0]} />} />
-                  {
-                    config.sections.map((name) => (
-                        <Route path={name} element={<C.Section k={name} />} />
-                      )
-                    )
-                  }
+                  <Route
+                    path="/"
+                    element={<C.Section k={config.sections[0]} />}
+                  />
+                  {config.sections.map((name) => (
+                    <Route path={name} element={<C.Section k={name} />} />
+                  ))}
                 </Routes>
               </div>
             </div>

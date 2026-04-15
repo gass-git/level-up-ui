@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 @import url("./Keyframes.css");
-@import url("./Media.css");
 
 :root {
   --text-shadow:
@@ -62,19 +61,6 @@ main > * {
   flex-direction: row;
 }
 
-.content {
-  width: 92%;
-  text-align: justify;
-  line-height: 30px;
-  height: 165px;
-  letter-spacing: 1px;
-  font-family: "play", sans-serif;
-  font-size: 16px;
-  color: white;
-  margin: 25px auto 5px auto;
-  text-shadow: var(--text-shadow);
-}
-
 .rpg-border {
   margin: 0 auto;
   border-radius: 8px;
@@ -94,6 +80,19 @@ main > * {
     rgba(35, 41, 63, 0.85) 2px,
     rgba(32, 39, 66, 0.85) 3px
   );
+}
+
+.content {
+  width: 92%;
+  text-align: justify;
+  line-height: 30px;
+  height: 65%;
+  letter-spacing: 1px;
+  font-family: "play", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin: 25px auto 5px auto;
+  text-shadow: var(--text-shadow);
 }
 
 .arrow-box {
@@ -122,11 +121,10 @@ main > * {
   color: white;
 }
 
-.menu .option{
+.menu .option {
   display: flex;
   border-radius: 3px;
   text-shadow: var(--text-shadow);
-  padding-left: 50px;
   margin: 5px 7px 5px 7px;
   height: 33px;
   justify-content: start;
@@ -135,12 +133,12 @@ main > * {
 }
 
 .menu .slider {
+  width: calc(100% - 15px);
   position: absolute;
   z-index: 1;
-  margin: 5px 7px 5px 7px;
+  margin: 5px 0px 5px 7px;
   border-radius: 3px;
   top: 0;
-  width: 92%;
   height: 31px;
   background: rgb(255, 255, 255, 0.3);
   transition: 300ms;
