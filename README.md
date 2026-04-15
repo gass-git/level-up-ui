@@ -56,5 +56,5 @@ npm run build
 ### In `src/data.tsx` you can set:
 
 - The messages been shown on the top scroller
-- The name, vocation and attributes of the character
+- The avatar, name, vocation and attributes of the character
 - The content being shown in each section

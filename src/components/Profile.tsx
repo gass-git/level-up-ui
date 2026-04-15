@@ -1,4 +1,3 @@
-import avatar from "../assets/images/paladin.png";
 import { config } from "../config";
 import { profile } from "../data";
 import useVW from "use-viewport-width";
@@ -26,7 +25,7 @@ export default function Profile() {
       }}
     >
       <div className="flex-container" style={{ height: `196px` }}>
-        <img src={avatar} className="avatar" alt="" />
+        <img src={profile.avatar} className="avatar" alt="" />
 
         <div
           style={{

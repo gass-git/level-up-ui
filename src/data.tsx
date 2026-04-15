@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import avatar from "../src/assets/images/paladin.png";
 
 const scrollerMessages = [
   <Fragment>
@@ -13,6 +14,7 @@ const scrollerMessages = [
 ];
 
 const profile = {
+  avatar: avatar,
   name: "Hayashiro",
   vocation: "Demon Hunter",
   attributes: [
