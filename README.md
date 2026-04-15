@@ -42,7 +42,7 @@ npm run dev
 npm run build
 ```
 
-## Configuration
+## 🔧 Configuration
 
 ### In `src/config.ts` you can configure the following:
 
