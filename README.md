@@ -58,3 +58,8 @@ npm run build
 - The messages been shown on the top scroller
 - The avatar, name, vocation and attributes of the character
 - The content being shown in each section
+
+### Social links:
+
+To give maximum freedom in terms of customization, the social links and copy email functionality will require
+modifying the component JSX directly. This can be done in `src/components/Links.tsx`.
